@@ -29,3 +29,8 @@ Password:
 ファイルが無事に表示された。これに記載されているフラグを解答。  
 
 ![a](./a.png)  
+
+## 参考リンク
+
+- [FTPのコマンド一覧](https://atmarkit.itmedia.co.jp/fnetwork/rensai/netpro11/ftp-command.html)
+- [ftpコマンドについて詳しくまとめました](https://eng-entrance.com/linux-command-ftp)
