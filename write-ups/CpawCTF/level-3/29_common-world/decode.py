@@ -11,5 +11,5 @@ ps = sympy.factorint(N)
 phi = (p - 1) * (q - 1)
 # d = pow(e, -1, phi) # こっちは駄目。e と phi が互いに素ではないから。じゃあなんでsympyのほうだとOKなのかは知らん。Rationalっていうsympy独自の型を使ってるらしいが。
 d = sympy.Mod(sympy.Pow(e, -1), phi)
-m = sympy.Mod(sympy.Pow(c, d), phi)
+m = sympy.Mod(sympy.Pow(c, d), N)
 print("cpaw{%d}" % m)
