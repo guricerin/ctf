@@ -56,8 +56,14 @@ where [other_options] may be one or more of
  -n     no progress indicator
 ```
 
+たぶんこんなノリだろう。  
+
+- ``-C`` : クラックしたいパスワード付きzip。
+- ``-c`` : ``-C``で指定したzipの中にある、中身が既知のファイル。
+- ``-p`` : ``-c``と同一内容で、パスワードが付加されていないファイル。
+
 ``Standard-lock-key.jpg``でググったら[Wikipediaのページ](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Standard-lock-key.jpg)がヒットした。  
-画像をダウンロード。**ただし、``2010年8月29日 (日) 18:53``に追加されたほうをだ。クソッタレ。ファイルサイズが2012年当時とは違うことに気づくのにやたら時間かかっちまった**``Standard-lock-key-P.jpg``という名前で保存しておく。  
+画像をダウンロード。**ただし、``2010年8月29日 (日) 18:53``に追加されたほうをだ。ファイルサイズが2012年当時とは違うことに気づくのにやたら時間かかっちまった。**``Standard-lock-key-P.jpg``という名前で保存しておく。  
 
 実行。  
 
@@ -148,3 +154,5 @@ $ mkdir out
 $ unzip flag-dec -d out
 $ less out/flag.html
 ```
+
+パスワード付きzipの中のファイルが一つでも攻撃者に知られていた場合、簡単に突破される。  
