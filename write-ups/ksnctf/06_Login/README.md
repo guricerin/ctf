@@ -96,6 +96,10 @@ Blind SQL Injection。SQLの結果の違いから正解を絞り込んでいく�
 
 ``FLAG_``の分を抜いた残りの16文字は総当たり。  
 
+```bash
+$ python3 crack.py
+```
+
 ### 参考
 
 - [SQLite Substr | SQLITE TUTORIAL](https://www.sqlitetutorial.net/sqlite-functions/sqlite-substr/)
