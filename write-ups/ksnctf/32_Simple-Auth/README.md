@@ -58,7 +58,7 @@ YOU ARE A LOSER.
 
 ### 正解
 
-``strcasecmp($_POST['password'], $password) == 0``に静寂性がある。  
+``strcasecmp($_POST['password'], $password) == 0``に脆弱性がある。  
 ``strcasecmp()``と``strcmp()``は厳密な型チェックをしないため、引数に配列を渡せる。返り値は``NULL``。また、``===``ではなく``==``で比較しているため、ここではfalsyな値（``NULL``, ``false``, ``0``）はすべて同一扱いされる。  
 
 ```bash
