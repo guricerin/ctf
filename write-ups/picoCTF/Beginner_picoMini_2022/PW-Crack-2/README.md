@@ -1,0 +1,4 @@
+```bash
+$ python3 -q
+>>> print(chr(0x33) + chr(0x39) + chr(0x63) + chr(0x65))
+```
