@@ -57,6 +57,14 @@ $ fls <Disk-image-File>
 $ icat <Disk-image-File> <inode-Number> > <output-File>
 ```
 
+##### mmls
+
+- ボリュームシステム(パーティションテーブル)のパーティションレイアウト情報を表示。
+
+```bash
+$ mmls <Disk-image-File>
+```
+
 #### [pdftotext](https://poppler.freedesktop.org/)
 
 - pdf中のテキストデータを抽出。
