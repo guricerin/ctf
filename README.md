@@ -73,3 +73,14 @@ $ mmls <Disk-image-File>
 $ sudo apt install poppler-utils
 $ pdftotext <PDF-File>
 ```
+
+### Web
+
+#### ミラーリング
+
+- ローカルにWebサイトを丸ごとミラーリング。
+- ホストを名前としたディレクトリが作成され、そこに出力される。
+
+```bash
+$ wget -m <URL>
+```
