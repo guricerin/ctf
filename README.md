@@ -9,13 +9,18 @@
 
 ### Cryptography
 
-#### モールス信号
+#### Morse code
 
-- https://morse.ariafloat.com/en/
+- online tool : https://morse.ariafloat.com/en/
 
-#### シーザー暗号
+#### Caesar cipher
 
-- https://www.dcode.fr/caesar-cipher
+- online tool : https://www.dcode.fr/caesar-cipher
+
+#### Rail Fence cipher (a.k.a ZigZag cipher)
+
+- 転置式暗号の一種。文字をジグザグに転置する。
+- online tool : https://cryptii.com/pipes/rail-fence-cipher
 
 ### Forensics
 
