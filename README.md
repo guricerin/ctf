@@ -9,18 +9,29 @@
 
 ### Cryptography
 
-#### Morse code
+#### Transposition cipher
 
+##### Rail Fence cipher (a.k.a ZigZag cipher)
+
+- 文字をジグザグに転置する。
+- online tool : https://cryptii.com/pipes/rail-fence-cipher
+
+#### Substitution cipher
+
+##### Morse code
+
+- key : nothing
 - online tool : https://morse.ariafloat.com/en/
 
-#### Caesar cipher
+##### Caesar cipher
 
+- key : shift number
 - online tool : https://www.dcode.fr/caesar-cipher
 
-#### Rail Fence cipher (a.k.a ZigZag cipher)
+##### Vigenere cipher
 
-- 転置式暗号の一種。文字をジグザグに転置する。
-- online tool : https://cryptii.com/pipes/rail-fence-cipher
+- key : a meaningful word
+- online tool : https://linesegment.web.fc2.com/application/cipher/Vigenere.html
 
 ### Forensics
 
