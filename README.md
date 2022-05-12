@@ -18,6 +18,8 @@
 
 #### Substitution cipher
 
+- online tool : https://www.dcode.fr/monoalphabetic-substitution
+
 ##### Morse code
 
 - key : nothing
