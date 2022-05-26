@@ -28,7 +28,9 @@
 ##### Caesar cipher
 
 - key : shift number
-- online tool : https://www.dcode.fr/caesar-cipher
+- online tool
+  - https://www.dcode.fr/caesar-cipher
+  - https://guricerin.github.io/caesar-cipher/
 
 ##### Vigenere cipher
 
