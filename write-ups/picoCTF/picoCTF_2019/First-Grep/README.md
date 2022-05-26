@@ -1,0 +1,3 @@
+```bash
+$ grep "pico" file
+```
