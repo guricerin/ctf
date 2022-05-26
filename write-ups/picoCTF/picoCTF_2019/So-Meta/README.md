@@ -1,3 +1,3 @@
 ```bash
-$ exiftool pico_img.png
+$ exiftool pico_img.png | grep pico
 ```
